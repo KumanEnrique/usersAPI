@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.2.1/cerulean/bootstrap.min.css">
+    <title>User with JSONPlaceholder</title>
+</head>
+<body>
+    <div id="mensaje">
+        <h4 id="texto"></h4>
+    </div>
+    <div class="container">
+
+        <form id="formulario">
+            <div class="form-group">
+                <input type="text" class="form-control" id="nombre" required placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="telefono" required placeholder="Phone">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="correo" required placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="usuario" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="compañia" placeholder="Company Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="direccion" required placeholder="Address">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="webSite" placeholder="Web Site">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        
+        <div class="row" id="contenedorHTML">
+
+            <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>name:</h5>
+                        <h5>phone:</h5>
+                        <h5>email:</h5>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Example" aria-expanded="false" aria-controls="Example">company</button>
+                        <div class="collapse" id="Example">
+                            <div class="card card-body">
+
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Item #1
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Item #2
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Item #3
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <h5>id:</h5>
+                        <h5>username:</h5>
+                        <h5>website:</h5>
+                        
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Example2" aria-expanded="false" aria-controls="Example2">address</button>
+                        <div class="collapse" id="Example2">
+                            <div class="card card-body">
+
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Item #1
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Item #2
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Item #3
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+
+
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form id="formActualizar">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nombreA" required placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="telefonoA" required placeholder="Phone">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="correoA" required placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usuarioA" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="compañiaA" placeholder="Company Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="direccionA" required placeholder="Address">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="webSiteA" placeholder="Web Site">
+                            </div>
+                            <button type="submit" class="btn btn-success">Update</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
